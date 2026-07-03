@@ -1,0 +1,114 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.categoria {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    background: #19baf5;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#adicionarSerie {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#aVer,
+#emDia,
+#paraVer,
+#terminadas,
+#desistidas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#aVer > div,
+#emDia > div,
+#paraVer > div,
+#terminadas > div,
+#desistidas > div {
+    width: 250px;
+    min-height: 170px;
+    background: #222;
+    border-radius: 15px;
+    border: 1px solid #333;
+    padding: 15px;
+}
+
+#aVer span,
+#emDia span,
+#paraVer span,
+#terminadas span,
+#desistidas span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#aVer button,
+#emDia button,
+#paraVer button,
+#terminadas button,
+#desistidas button {
+    margin: 3px;
+}
+
+.poster {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#pesquisa {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#exportarBackup {
+    margin: 0;
+}

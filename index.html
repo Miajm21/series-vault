@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Series Vault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="topo">
+    <h1>🎬 Series Vault</h1>
+
+    <div>
+        <button id="exportarBackup">💾</button>
+        <button id="importarBackup">📂</button>
+    </div>
+</div>
+
+<input
+    type="file"
+    id="ficheiroBackup"
+    accept=".json"
+    style="display:none;"
+>
+
+<button id="adicionarSerie">➕ Adicionar Série</button>
+
+<input
+    type="text"
+    id="pesquisa"
+    placeholder="🔎 Procurar série..."
+>
+
+<div class="categoria">
+        <h2>📺 A Ver (<span id="contAver">0</span>)</h2>
+        <div id="aVer"></div>
+    </div>
+
+    <div class="categoria">
+        <h2>✅ Em Dia (<span id="contEmDia">0</span>)</h2>
+        <div id="emDia"></div>
+    </div>
+
+    <div class="categoria">
+        <h2>🤔 Para Ver (<span id="contParaVer">0</span>)</h2>
+        <div id="paraVer"></div>
+    </div>
+
+    <div class="categoria">
+        <h2>🏁 Terminadas (<span id="contTerminadas">0</span>)</h2>
+        <div id="terminadas"></div>
+    </div>
+
+    <div class="categoria">
+        <h2>❌ Desistidas (<span id="contDesistidas">0</span>)</h2>
+        <div id="desistidas"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
